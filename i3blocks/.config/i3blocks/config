@@ -10,6 +10,10 @@ command=~/.config/i3blocks/network.sh
 interval=10
 markup=pango
 
+[volume]
+command=~/.config/i3blocks/volume.sh
+interval=1
+
 [date]
 command=date +"%B %d"
 interval=60
