@@ -5,6 +5,11 @@ command=~/.config/i3blocks/battery.sh
 interval=10
 markup=pango
 
+[network]
+command=~/.config/i3blocks/network.sh
+interval=10
+markup=pango
+
 [date]
 command=date +"%B %d"
 interval=60
@@ -12,7 +17,3 @@ interval=60
 [time]
 command=date +"%H:%M"
 interval=1
-
-# gap block to put some space between the system tray
-[spacer]
-full_text= 

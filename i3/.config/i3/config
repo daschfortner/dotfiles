@@ -212,5 +212,5 @@ bar {
         }
 
         workspace_min_width 25
-        padding 3px 0
+        padding 3px 15px 3px 0px
 }

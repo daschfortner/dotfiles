@@ -45,20 +45,9 @@ vim.keymap.set('n', '<leader>gu', ':Gitsigns undo_stage_hunk<CR>')
 
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.tsserver.setup({
-  on_attach = function(client, bufnr)
-    print('Typescript attached')
-  end
-})
-lspconfig.eslint.setup({
-  on_attach = function(client, bufnr)
-    print('ESLint attached')
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      buffer = bufnr,
-      command = "EslintFixAll",
-    })
-  end,
-})
+lspconfig.tsserver.setup({})
+lspconfig.eslint.setup({})
+lspconfig.bashls.setup({})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
