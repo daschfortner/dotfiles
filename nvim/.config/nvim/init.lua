@@ -41,7 +41,7 @@ vim.keymap.set('n', '<leader>gr', ':Gitsigns reset_hunk<CR>')
 vim.keymap.set('n', '<leader>gs', ':Gitsigns stage_hunk<CR>')
 vim.keymap.set('n', '<leader>gu', ':Gitsigns undo_stage_hunk<CR>')
 
-require('lsp/typescript')
+require('lsp/install')
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

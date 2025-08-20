@@ -1,3 +1,8 @@
+--  Typescript/Javascript language server
+--  
+--  This LSP configuration uses `typescript-language-server`:
+--    npm i -g typescript-language-server
+
 local autocmd = vim.api.nvim_create_autocmd
 autocmd('FileType', {
     pattern = { 'typescript', 'typescriptreact', 'javascript', 'javascriptreact' },
