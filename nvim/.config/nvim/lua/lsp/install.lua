@@ -3,3 +3,4 @@
 
 require('lsp.typescript')
 require('lsp.bash')
+require('lsp.terraform')
