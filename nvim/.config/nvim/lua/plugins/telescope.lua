@@ -5,7 +5,7 @@ return {
   cmd = 'Telescope',
   keys = {
 		{ '<leader>p', '<cmd>Telescope find_files<CR>', desc = 'Fuzzyfind file' },
-		{ '<leader>f', '<cmd>Telescope live_grep<CR>', desc = 'Grep for a file' },
+		{ '<leader>g', '<cmd>Telescope live_grep<CR>', desc = 'Grep for a file' },
 --  { '<leader>fb', '<cmd>Telescope buffers<CR>', desc = 'Find buffers' },
 --  { '<leader>fh', '<cmd>Telescope help_tags<CR>', desc = 'Help' },
 --  { '<leader>fk', '<cmd>Telescope keymaps<CR>', desc = 'Find keymaps' },
