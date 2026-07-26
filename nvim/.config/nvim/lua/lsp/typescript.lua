@@ -1,7 +1,7 @@
 --  Typescript/Javascript language server
 --  
---  This LSP configuration uses `typescript-language-server`:
---    npm i -g typescript-language-server
+--  This LSP configuration uses `vtsls`:
+--    npm i -g @vtsls/language-server
 
 local autocmd = vim.api.nvim_create_autocmd
 autocmd('FileType', {
@@ -11,11 +11,10 @@ autocmd('FileType', {
             vim.fs.find({ 'package.json' }, { upward = true })[1]
         )
         local client = vim.lsp.start({
-            name = 'typescript-language-server',
-            cmd = { 'typescript-language-server', '--stdio' },
+            name = 'vtsls',
+            cmd = { 'vtsls', '--stdio' },
             root_dir = root_dir,
         })
         vim.lsp.buf_attach_client(0, client)
     end
 })
-

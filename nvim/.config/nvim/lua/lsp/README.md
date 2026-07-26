@@ -55,8 +55,8 @@ autocmd('FileType', {
             vim.fs.find({ 'package.json' }, { upward = true })[1]
         )
         local client = vim.lsp.start({
-            name = 'typescript-language-server',
-            cmd = { 'typescript-language-server', '--stdio' },
+            name = 'vtsls',
+            cmd = { 'vtsls', '--stdio' },
             root_dir = root_dir,
         })
         vim.lsp.buf_attach_client(0, client)
